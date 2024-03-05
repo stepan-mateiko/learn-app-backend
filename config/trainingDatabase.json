@@ -1,0 +1,114 @@
+{
+  "trainings": [
+    {
+      "name": "Python",
+      "duration": "4",
+      "date": "2023-12-21",
+      "student": "84d2f293-4862-4bab-a875-31745007a743",
+      "trainer": "3c372c23-3c3b-4bcd-9320-9b03f63ab3e3",
+      "type": "Bootcamp",
+      "description": "",
+      "id": "888c9745-5238-4f45-8f39-4f99ec5390a3"
+    },
+    {
+      "name": "BootStrap",
+      "duration": "11",
+      "date": "2024-01-02",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "2fa290da-318d-416d-b3b8-a717e081b27d",
+      "type": "Full course",
+      "description": "gfg",
+      "id": "5f0ef939-5803-49f2-9481-30684a944ef5"
+    },
+    {
+      "name": "React",
+      "duration": "5",
+      "date": "2023-12-13",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "3c372c23-3c3b-4bcd-9320-9b03f63ab3e3",
+      "type": "Webinar",
+      "description": "",
+      "id": "2f073742-037b-4613-8c54-0e46eb1f6e4a"
+    },
+    {
+      "name": "Angular",
+      "duration": "110",
+      "date": "2023-07-02",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "2fa290da-318d-416d-b3b8-a717e081b27d",
+      "type": "Full course",
+      "description": "gfgffdfdfffffffff",
+      "id": "5b072f82-7c6e-4ef1-abda-9ff04e74254e"
+    },
+    {
+      "name": "Angular",
+      "duration": "110",
+      "date": "2023-07-02",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "2fa290da-318d-416d-b3b8-a717e081b27d",
+      "type": "Full course",
+      "description": "gfgffdfdfffffffff",
+      "id": "48551265-779b-4484-b1c4-2fbb79e59e84"
+    },
+    {
+      "name": "Angular",
+      "duration": "110",
+      "date": "2023-07-02",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "2fa290da-318d-416d-b3b8-a717e081b27d",
+      "type": "Full course",
+      "description": "gfgffdfdfffffffff",
+      "id": "bcd0e494-9c29-42d6-8b45-507c67436d8f"
+    },
+    {
+      "name": "Angular",
+      "duration": "110",
+      "date": "2023-07-02",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "2fa290da-318d-416d-b3b8-a717e081b27d",
+      "type": "Full course",
+      "description": "gfgffdfdfffffffff",
+      "id": "e0918ccd-c31f-45a4-a4db-ab1a9174d1e0"
+    },
+    {
+      "name": "",
+      "duration": "32",
+      "date": "2024-02-08",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "1e3176b7-39b9-421e-8c71-1c583ad33bb7",
+      "type": "Bootcamp",
+      "description": "dsd",
+      "id": "20a2b98e-3227-4e26-baf7-c569cfadde67"
+    },
+    {
+      "name": "",
+      "duration": "0",
+      "date": "",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "1e3176b7-39b9-421e-8c71-1c583ad33bb7",
+      "type": "Full course",
+      "description": "",
+      "id": "8e6c8ffa-a134-4dfb-ad72-3611981d4657"
+    },
+    {
+      "name": "",
+      "duration": "0",
+      "date": "",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "1e3176b7-39b9-421e-8c71-1c583ad33bb7",
+      "type": "Full course",
+      "description": "",
+      "id": "d8b9281e-8542-48a0-8aa7-1679f3d98829"
+    },
+    {
+      "name": "",
+      "duration": "0",
+      "date": "",
+      "student": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "trainer": "1e3176b7-39b9-421e-8c71-1c583ad33bb7",
+      "type": "Full course",
+      "description": "",
+      "id": "171138f2-0aad-439a-b65c-f41d0cda63a8"
+    }
+  ]
+}

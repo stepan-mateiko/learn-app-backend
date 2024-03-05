@@ -1,0 +1,28 @@
+{
+  "trainingTypes": [
+    {
+      "id": "992e372a-0a2d-4394-bdb4-4c23f21eb1bb",
+      "trainingType": "Full course"
+    },
+    {
+      "id": "Rt2e372a-0a2d-4394-bdb4-4c23f21eb1bb",
+      "trainingType": "Webinar"
+    },
+    {
+      "id": "Et7hJ72a-0a2d-4394-bdb4-4c23f21eb1bb",
+      "trainingType": "Bootcamp"
+    },
+    {
+      "id": "3c98f6e2-8392-4c0c-a342-72c9323f1dca",
+      "trainingType": "Workshop"
+    },
+    {
+      "id": "a95c370e-5867-4c76-87cc-23ad234dc9c1",
+      "trainingType": "Seminar"
+    },
+    {
+      "id": "f8d3c92b-0ba2-45c9-93d9-ef2c3a5e1c7d",
+      "trainingType": "Online Course"
+    }
+  ]
+}

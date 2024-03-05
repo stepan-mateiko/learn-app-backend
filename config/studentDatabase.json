@@ -1,0 +1,120 @@
+{
+  "students": [
+    {
+      "firstName": "Jon",
+      "lastName": "Snow",
+      "email": "mywatchbegins@gmail.com",
+      "dob": "2000-12-21",
+      "address": "Winterfell",
+      "trainings": [
+        "edfd67f1-e5b8-418c-aa63-eacf32b4f00d",
+        "f4c781d0-c84d-4e50-9aaa-aeb9d8d78fbb",
+        "9037ce96-246a-4f7f-90ed-4684803acfea",
+        "5f0ef939-5803-49f2-9481-30684a944ef5",
+        "9edbbcd7-805e-46ea-8534-e779401378d4",
+        "d68853b4-595c-4bd6-8459-9c1e5767b798",
+        "b88efcc3-1ec5-45a9-be15-11ff77d942ba",
+        "2f073742-037b-4613-8c54-0e46eb1f6e4a",
+        "5b072f82-7c6e-4ef1-abda-9ff04e74254e",
+        "48551265-779b-4484-b1c4-2fbb79e59e84",
+        "bcd0e494-9c29-42d6-8b45-507c67436d8f",
+        "e0918ccd-c31f-45a4-a4db-ab1a9174d1e0",
+        "d254c1c3-c6bf-4830-a473-2e403bdb8b43",
+        "54610f07-6398-4cce-b93d-80528d430069",
+        "0a7ec4ea-1215-40aa-a115-4fc810cc0442",
+        "20a2b98e-3227-4e26-baf7-c569cfadde67",
+        "8e6c8ffa-a134-4dfb-ad72-3611981d4657",
+        "d8b9281e-8542-48a0-8aa7-1679f3d98829",
+        "171138f2-0aad-439a-b65c-f41d0cda63a8"
+      ],
+      "trainers": [
+        "3c372c23-3c3b-4bcd-9320-9b03f63ab3e3",
+        "5d5630a6-d50a-4747-8ca6-74c57d581939",
+        "2fa290da-318d-416d-b3b8-a717e081b27d",
+        "e0d90296-d56a-49f1-8913-6cfb4354575e",
+        "e2db5979-4a52-4bb3-9bc7-ad13cbb1d956",
+        "1e3176b7-39b9-421e-8c71-1c583ad33bb7"
+      ],
+      "id": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "isActive": true,
+      "userName": "jon-snow"
+    },
+    {
+      "firstName": "Joffrey",
+      "lastName": "Baratheon",
+      "email": "stupidimp@gmail.com",
+      "dob": "",
+      "address": "",
+      "trainers": [
+        "5d5630a6-d50a-4747-8ca6-74c57d581939"
+      ],
+      "trainings": [
+        "4dfd47f1-e5b8-418c-aa63-eacf32b4f00d"
+      ],
+      "id": "3713468a-4655-457d-a3d4-b17702695fbc",
+      "isActive": true
+    },
+    {
+      "firstName": "Stepan",
+      "lastName": "Mateiko",
+      "email": "stepan.mateiko@gmail.com",
+      "dob": "1994-10-19",
+      "address": "Lviv, Muzyky 34",
+      "trainers": [
+        "3c372c23-3c3b-4bcd-9320-9b03f63ab3e3",
+        "5d5630a6-d50a-4747-8ca6-74c57d581939"
+      ],
+      "trainings": [
+        "f067cae2-855b-4ec0-b046-6f2cf8e46b56",
+        "888c9745-5238-4f45-8f39-4f99ec5390a3"
+      ],
+      "id": "84d2f293-4862-4bab-a875-31745007a743",
+      "isActive": true
+    },
+    {
+      "firstName": "Daenerys",
+      "lastName": "Targaryen",
+      "email": "draccarys@gmail.com",
+      "dob": "",
+      "address": "",
+      "trainers": [],
+      "trainings": [],
+      "id": "2ec0c77b-ecba-46e7-aa11-c99a23cef0a3",
+      "isActive": true
+    },
+    {
+      "firstName": "Robert",
+      "lastName": "Arryn",
+      "email": "lethimfly@gmail.com",
+      "dob": "",
+      "address": "",
+      "trainers": [],
+      "trainings": [],
+      "id": "adc9cf66-e158-4e69-95d7-33b208672d05",
+      "isActive": true
+    },
+    {
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "email": "batman@gmail.com",
+      "dob": "",
+      "address": "Gotham",
+      "trainers": [],
+      "trainings": [],
+      "id": "e731d35e-858b-4cde-8b0b-94e6b0223554",
+      "isActive": true
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "doe@gmail.com",
+      "userName": "john-doe",
+      "dob": "2024-01-30",
+      "address": "Lviv",
+      "trainers": [],
+      "trainings": [],
+      "id": "bee4d397-34b3-4a9c-986d-1d7c2e1ccd62",
+      "isActive": true
+    }
+  ]
+}

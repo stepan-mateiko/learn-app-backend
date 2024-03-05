@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "firstName": "Rhaeghar",
+      "lastName": "Targaryen",
+      "email": "threeheads@gmail.com",
+      "role": "trainer",
+      "id": "e0d90296-d56a-49f1-8913-6cfb4354575e",
+      "userName": "rhaeghar-targaryen",
+      "password": "z1FhXv"
+    },
+    {
+      "firstName": "Eddard",
+      "email": "winteriscomin@gmail.com",
+      "role": "trainer",
+      "id": "3c372c23-3c3b-4bcd-9320-9b03f63ab3e3",
+      "userName": "ned-stark",
+      "password": "stark99",
+      "lastName": "Stark"
+    },
+    {
+      "firstName": "Jon",
+      "email": "mywatchbegins@gmail.com",
+      "lastName": "Snow",
+      "role": "student",
+      "id": "29833a19-e909-4e5c-97ff-2ceee8bd476e",
+      "userName": "jon-snow",
+      "password": "ghost"
+    },
+    {
+      "firstName": "Joffrey",
+      "email": "stupidimp@gmail.com",
+      "role": "student",
+      "id": "3713468a-4655-457d-a3d4-b17702695fbc",
+      "userName": "joffrey-baratheon",
+      "password": "jB3CGS"
+    },
+    {
+      "firstName": "Tyrion",
+      "email": "serceisucks@gmail.com",
+      "role": "trainer",
+      "id": "5d5630a6-d50a-4747-8ca6-74c57d581939",
+      "userName": "tyrion-lannister",
+      "password": "hF1c3x"
+    },
+    {
+      "firstName": "Stepan",
+      "email": "stepan.mateiko@gmail.com",
+      "role": "student",
+      "id": "84d2f293-4862-4bab-a875-31745007a743",
+      "userName": "stepan-mateiko",
+      "password": "stark99"
+    },
+    {
+      "firstName": "Daynerys",
+      "email": "draccarys@gmail.com",
+      "role": "student",
+      "id": "2ec0c77b-ecba-46e7-aa11-c99a23cef0a3",
+      "userName": "daynerys-targaryen",
+      "password": "hAYPQE"
+    },
+    {
+      "firstName": "Olenna",
+      "email": "iwasgood@gmail.com",
+      "role": "trainer",
+      "id": "1e3176b7-39b9-421e-8c71-1c583ad33bb7",
+      "userName": "olenna-tyrell",
+      "password": "tyrell"
+    },
+    {
+      "firstName": "Iryna",
+      "email": "ira@gmail.com",
+      "role": "trainer",
+      "id": "e2db5979-4a52-4bb3-9bc7-ad13cbb1d956",
+      "userName": "iryna-mateiko",
+      "password": "Stark99",
+      "lastName": "Mateiko"
+    },
+    {
+      "firstName": "Robert",
+      "email": "lethimfly@gmail.com",
+      "role": "student",
+      "id": "adc9cf66-e158-4e69-95d7-33b208672d05",
+      "userName": "robert-arryn",
+      "password": "yOzyde"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "test",
+      "email": "test@gmail.com",
+      "role": "trainer",
+      "id": "872fd870-1164-43e2-b0aa-cea0c03f7b9b",
+      "userName": "test-test",
+      "password": "2YsftP"
+    },
+    {
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "email": "ivanov@gmail.com",
+      "role": "trainer",
+      "id": "2fa290da-318d-416d-b3b8-a717e081b27d",
+      "userName": "Ivan-ivanov",
+      "password": "admin123"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "doe@gmail.com",
+      "userName": "john-doe",
+      "password": "HN02MykJ",
+      "role": "student",
+      "id": "bee4d397-34b3-4a9c-986d-1d7c2e1ccd62"
+    }
+  ]
+}
