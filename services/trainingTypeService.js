@@ -2,11 +2,7 @@ import { trainingTypeRepository } from "../repositories/trainingTypeRepository.j
 
 class TrainingTypeService {
   getAllTrainingTypes() {
-    const item = trainingTypeRepository.getAll();
-    if (!item) {
-      return null;
-    }
-    return item;
+    return trainingTypeRepository.getAll();
   }
 }
 

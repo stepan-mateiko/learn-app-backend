@@ -22,25 +22,6 @@
       "isActive": true
     },
     {
-      "firstName": "Eddard",
-      "lastName": "Stark",
-      "email": "winteriscomin@gmail.com",
-      "specialization": "UI/UX Design",
-      "students": [
-        "29833a19-e909-4e5c-97ff-2ceee8bd476e",
-        "84d2f293-4862-4bab-a875-31745007a743"
-      ],
-      "trainings": [
-        "edfd67f1-e5b8-418c-aa63-eacf32b4f00d",
-        "888c9745-5238-4f45-8f39-4f99ec5390a3",
-        "2f073742-037b-4613-8c54-0e46eb1f6e4a",
-        "d254c1c3-c6bf-4830-a473-2e403bdb8b43"
-      ],
-      "id": "3c372c23-3c3b-4bcd-9320-9b03f63ab3e3",
-      "userName": "ned-stark",
-      "isActive": true
-    },
-    {
       "firstName": "Tyrion",
       "lastName": "Lannister",
       "email": "serceisucks@gmail.com",

@@ -1,9 +1,11 @@
-import { BaseRepository } from "./baseRepository.js";
-import { trainingTypeDbAdapter } from "../config/db.js";
+import { client } from "../db/db.js";
 
-class TrainingTypeRepository extends BaseRepository {
+class TrainingTypeRepository {
   constructor() {
-    super("trainingTypes", trainingTypeDbAdapter);
+    this.collection = client.db("Learn-app").collection("TrainingTypes");
+  }
+  getAll() {
+    return this.collection.find().toArray();
   }
 }
 
