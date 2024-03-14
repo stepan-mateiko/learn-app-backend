@@ -1,60 +1,67 @@
 import { Router } from "express";
 import { userService } from "../services/userService.js";
+import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+dotenv.config();
 
 const router = Router();
 
-router.post("/", async (req, res) => {
+router.post("/login", async (req, res) => {
   try {
     const userData = req.body;
     const users = await userService.getAllUsers();
     const existingUser = users.find(
       (user) => user.userName === userData.userName
     );
+
     if (!existingUser) {
       throw new Error("User not found");
     }
+
     if (existingUser.password !== userData.password) {
       throw new Error("Password incorrect");
     }
-    res.json(existingUser);
+
+    const token = jwt.sign(
+      { userId: existingUser.ID, userName: existingUser.userName },
+      process.env.TOKEN_KEY,
+      { expiresIn: "1h" }
+    );
+
+    res.json({ ...existingUser, token });
   } catch (error) {
     res.status(500).json({ error: true, message: error.message });
   }
 });
 
+router.post("/register", async (req, res) => {
+  try {
+    const { email } = req.body;
+    const isUserPresentInDBbyEmail = await userService.getOneUser({ email });
+
+    if (isUserPresentInDBbyEmail) {
+      res.status(400).json({ error: "User already exists" });
+    } else {
+      const userData = req.body;
+      const user = await userService.addUser(userData);
+      let extraData;
+
+      if (userData.role === "trainer") {
+        extraData = await trainerService.addTrainer(userData);
+      } else {
+        extraData = await studentService.addStudent(userData);
+      }
+      const token = jwt.sign(
+        { userId: existingUser.ID, userName: existingUser.userName },
+        process.env.TOKEN_KEY,
+        { expiresIn: "1h" }
+      );
+      res.json({ user, extraData, token });
+    }
+  } catch (error) {
+    console.error("Error creating user:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 export { router };
-
-// import { Router } from "express";
-// import { authService } from "../services/authService.js";
-// import { responseMiddleware } from "../middlewares/response.middleware.js";
-
-// const router = Router();
-
-// router.post(
-//   "/",
-//   (req, res, next) => {
-//     try {
-//       const userData = req.body;
-//       const user = authService.login(userData);
-//       if (user) {
-//         req.body = {
-//           ...user,
-//         };
-
-//         return req.body;
-//       } else {
-//         throw new Error(`User not found`);
-//       }
-//     } catch ({ message }) {
-//       return (req.body = {
-//         error: true,
-//         message,
-//       });
-//     } finally {
-//       next();
-//     }
-//   },
-//   responseMiddleware
-// );
-
-// export { router };

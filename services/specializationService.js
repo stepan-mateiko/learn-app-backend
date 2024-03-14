@@ -9,17 +9,3 @@ class SpecializationService {
 const specializationService = new SpecializationService();
 
 export { specializationService };
-
-// class SpecializationService {
-//   getAllSpecializations() {
-//     const item = specializationRepository.getAll();
-//     if (!item) {
-//       return null;
-//     }
-//     return item;
-//   }
-// }
-
-// const specializationService = new SpecializationService();
-
-// export { specializationService };
