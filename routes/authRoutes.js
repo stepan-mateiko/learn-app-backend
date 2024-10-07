@@ -1,7 +1,11 @@
 import { Router } from "express";
 import { userService } from "../services/userService.js";
+import { studentService } from "../services/studentService.js";
+import { trainerService } from "../services/trainerService.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import { addToBlacklist } from "../middlewares/blacklist.js";
+
 dotenv.config();
 
 const router = Router();
@@ -22,13 +26,11 @@ router.post("/login", async (req, res) => {
       throw new Error("Password incorrect");
     }
 
-    const token = jwt.sign(
-      { userId: existingUser.ID, userName: existingUser.userName },
-      process.env.TOKEN_KEY,
-      { expiresIn: "1h" }
-    );
+    const token = jwt.sign(existingUser, process.env.TOKEN_KEY, {
+      expiresIn: "2h",
+    });
 
-    res.json({ ...existingUser, token });
+    res.json({ existingUser, token: `Bearer ${token}` });
   } catch (error) {
     res.status(500).json({ error: true, message: error.message });
   }
@@ -51,16 +53,26 @@ router.post("/register", async (req, res) => {
       } else {
         extraData = await studentService.addStudent(userData);
       }
-      const token = jwt.sign(
-        { userId: existingUser.ID, userName: existingUser.userName },
-        process.env.TOKEN_KEY,
-        { expiresIn: "1h" }
-      );
-      res.json({ user, extraData, token });
+      const token = jwt.sign(userData, process.env.TOKEN_KEY, {
+        expiresIn: "1h",
+      });
+      res.json({ user, extraData, token: `Bearer ${token}` });
     }
   } catch (error) {
     console.error("Error creating user:", error);
     res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+router.post("/logout", (req, res) => {
+  try {
+    console.log(req.headers);
+    const token = req.headers.authorization.split(" ")[1];
+    addToBlacklist(token);
+    res.status(200).json({ message: "Token revoked successfully" });
+  } catch (error) {
+    console.log(req.headers);
+    res.status(500).json({ error: true, message: error.message });
   }
 });
 
