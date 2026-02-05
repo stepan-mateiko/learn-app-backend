@@ -4,8 +4,6 @@ import dotenv from "dotenv";
 import { initRoutes } from "./routes/routes.js";
 import { connectToDatabase } from "./db/db.js";
 import { handleFileUpload } from "./handlers/imageHandler.js";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
 import { verifyToken } from "./middlewares/verifyToken.js";
 
 const app = express();
@@ -20,12 +18,8 @@ app.use("/api/students", verifyToken);
 app.use("/api/trainings", verifyToken);
 
 initRoutes(app);
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-app.use("/uploads", express.static(join(__dirname, "uploads")));
-
 const port = process.env.API_PORT || 3080;
-handleFileUpload(app, port);
+handleFileUpload(app);
 
 async function startServer() {
   await connectToDatabase();

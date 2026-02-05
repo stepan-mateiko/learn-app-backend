@@ -1,26 +1,33 @@
 import multer from "multer";
-import fs from "fs";
+import { CloudinaryStorage } from "multer-storage-cloudinary";
+import { v2 as cloudinary } from "cloudinary";
 
-const handleFileUpload = (app, port) => {
-  const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      const uploadDir = "./uploads";
-      fs.mkdirSync(uploadDir, { recursive: true });
-      cb(null, uploadDir);
-    },
-    filename: (req, file, cb) => {
-      cb(null, file.originalname);
-    },
-  });
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
-  const upload = multer({ storage: storage });
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: {
+    folder: "learn-app",
+    allowed_formats: ["jpg", "png", "jpeg", "webp"],
+  },
+});
 
-  app.post("/upload", upload.single("file"), (req, res) => {
-    const filePath = req.file.path;
-    const fileUrl = `http://localhost:${port}/${filePath}`;
+const upload = multer({ storage });
 
-    console.log("File uploaded:", fileUrl);
-    res.send("File uploaded successfully");
+const handleFileUpload = (app) => {
+  app.post("/api/upload", upload.single("file"), (req, res) => {
+    if (!req.file) {
+      return res.status(400).json({ error: "Upload failed" });
+    }
+
+    res.json({
+      message: "Uploaded successfully",
+      url: req.file.path, // Cloudinary URL
+    });
   });
 };
 
